@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BUENAS PRACTICAS</title>
+</head>
+<body>
+<h1>BUENAS PRACTICAS EN FORMULARIOS HTML</h1>
+<section>
+<p>Aplicar buenas prácticas al crear formularios es esencial para mejorar la experiencia del usuario, la accesibilidad, la seguridad y la eficiencia de tu página web.</p>
+<p>Aquí tienes la lista de recomendaciones clave y cómo aplicarlas en tu código:</p>
+<ul>
+	<li><strong>Accesibilidad y Claridad:</strong>
+		<ul>
+			<li>Utiliza siempre la etiqueta <code>&lt;label&gt;</code> enlazada a cada campo, esto es fundamental para mejorar la accesibilidad de la web.</li>
+			<li>Usa el atributo placeholder para mostrar textos de ejemplo que proporcionen pistas visuales sobre lo que el usuario debe escribir.</li>
+		</ul>
+	</li>
+	<li><strong>Validación y Eficiencia:</strong>
+		<ul>
+			<li>Elige los tipos de entrada adecuados (por ejemplo, type="email" en lugar de texto normal) según los datos que necesites.</li>
+			<li>Aplica el atributo required para definir qué campos son obligatorios antes de enviar el formulario.</li>
+			<li>Añade validación nativa apoyándote en atributos como pattern, min o max para restringir lo que se puede introducir.</li>
+			<li>Utiliza la función autocomplete para ayudar al usuario a rellenar el formulario más rápido.</li>
+		</ul>
+	</li>
+	<li><strong>Estructura y Control de Errores</strong>
+		<ul>
+			<li>Organización: Agrupa los campos del formulario de forma lógica. El bloque de código muestra cómo hacerlo usando la etiqueta <code>&lt;fieldset&gt;</code> (que crea una caja agrupadora) y <code>&lt;legend&gt;</code> (que le da un título a esa caja, como "Informació Personal"). </li><br>
+			<img src="buenas_practicas.png" alt="Buenas Practicas">
+			<br>
+			<li>Gestión de errores: Debes proporcionar información clara sobre los errores. El código inferior muestra cómo usar un evento de JavaScript integrado (oninvalid="this.setCustomValidity('...')" ) para cambiar el mensaje de error genérico del navegador por uno personalizado y claro si el correo introducido no es válido.</li><br>
+			<img src="buenas_practicas2.png" alt="Buenas Practicas">
+		</ul>
+	</li>
+</ul>
+</section>
+<section>
+<button onclick="window.location.href='../CONTENIDO_HTML_AVANZADO.html'">
+  Volver al Menu Anterior
+</button>
+</section>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>METADATOS CON HTML</title>
+</head>
+<body>
+<h1>METADATOS CON HTML</h1>
+<section>
+<p>Las metadades son información crucial que se coloca dentro de la etiqueta <code>&lt;head&gt;</code> del documento HTML. Aunque no se muestran directamente en la página web que ve el usuario, son esenciales para describir las características del documento y proporcionar instrucciones a navegadores, motores de búsqueda (como Google) y otras aplicaciones.</p>
+<ol start=1>
+	<li><b>Configuración Básica del Documento</b>
+		<ul>
+			<li>Charset: Define el conjunto de caracteres. Se recomienda usar UTF-8 (<code>&lt;meta charset="UTF-8"&gt;</code>), ya que soporta casi todos los caracteres y símbolos del mundo, evitando que el texto se vea con errores.</li>
+			<img src="charset.png" alt="Charset">
+			<li>Viewport: Fundamental para el diseño web responsivo (<code>&lt;meta name="viewport" content="..."&gt;</code>). Garantiza que el contenido se adapte y escale correctamente en diferentes tamaños de pantalla, especialmente en dispositivos móviles.</li>
+			<img src="viewport.png" alt="Viewport">
+		</ul>
+	</li>
+	<li><b>Información para el SEO y Buscadores</b>
+		<ul>
+			<li>Description: Proporciona un breve resumen de la página web (<code>&lt;meta name="description" content="..."&gt;</code>). Los motores de búsqueda suelen usar este texto para mostrar la descripción en los resultados de búsqueda.</li>
+			<img src="descripcion.png" alt="Descripcion">
+			<li>Keywords: Una lista de palabras clave (<code>&lt;meta name="keywords" content="..."&gt;</code>). Aunque hoy en día no es tan relevante para el posicionamiento principal, describe los temas centrales de la página.</li>
+			<img src="palabrasclave.png" alt="Keywords">
+			<li>Author: Indica el autor o la empresa responsable de crear el contenido (<code>&lt;meta name="author" content="..."&gt;</code>).</li>
+			<img src="autor.png" alt="Author">
+		</ul>
+	</li>
+	<li><b>Interacción con Motores de Búsqueda y Redes Sociales</b>
+		<ul>
+			<li>Robots: Da instrucciones directas a los motores de búsqueda sobre si deben indexar la página y seguir sus enlaces (ej. <code>&lt;meta name="robots" content="index, follow"&gt;</code>).</li>
+			<img src="busqueda.png" alt="Search">
+			<li>Open Graph Tags (OG): Estas metadades (ej. og:title, og:image) son utilizadas por redes sociales como Facebook o Twitter para mostrar previsualizaciones atractivas y personalizadas (con título, descripción y foto) cuando alguien comparte el enlace de tu web.</li>
+			<img src="graphtags.png" alt="Open Graph Tags">
+		</ul>
+	</li>
+	<li><b>Elementos Visuales e Idioma</b>
+		<ul>
+			<li>Iconos para móviles: Se pueden definir iconos específicos (ej. apple-touch-icon) para cuando un usuario guarda tu página web en la pantalla de inicio de su teléfono.</li>
+			<img src="movil.png" alt="Phone">
+			<li>Favicon: Aunque usa la etiqueta <code>&lt;link&gt;</code> en lugar de <code>&lt;meta&gt;</code>, es un dato visual importante (<code>&lt;link rel="icon" ...&gt;</code>). Es el pequeño icono que aparece en la pestaña del navegador, junto al título de la página.</li>
+			<img src="favicon.png" alt="Favicon">
+			<li>Atributo lang: Se define directamente en la etiqueta principal <code>&lt;html&gt;</code> (ej. <code>&lt;html lang="ca"&gt;</code>) para especificar el idioma general de la página, lo que es vital para la accesibilidad y el SEO.</li>
+			<img src="lang.png" alt="Lang">
+		</ul>
+	</li>
+</ol>
+</section>
+<section>
+<h2>ALERT!</h2>
+<img src="buenaspracticas.png" alt="Alert!">
+</section>
+<section>
+<button onclick="window.location.href='../CONTENIDO_HTML_AVANZADO.html'">
+  Volver al Menu Anterior
+</button>
+</section>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>MULTIMEDIA CON HTML</title>
+</head>
+<body>
+<h1>MULTIMEDIA CON HTML</h1>
+<section>
+<p>HTML5 revolucionó la integración multimedia en la web, permitiendo insertar imágenes, vídeos y audios de manera nativa, eficiente y sin depender de complementos externos (como el antiguo Flash). Esto mejoró enormemente la compatibilidad en todos los dispositivos, especialmente en móviles.</p>
+<p>Tres etiquetas principales para integrar contenido multimedia:</p>
+<ol>
+	<li><strong>Imágenes (<code>&lt;img&gt;</code>)</strong>
+		<ul>
+			<li>Función: Inserta imágenes en la página. Es una etiqueta "auto-cerrada" (no lleva <code>&lt;/img&gt;</code>).</li>
+			<li>Atributos clave:
+				<ul>
+					<li>src: Indica la ruta o ubicación del archivo de la imagen.</li>
+					<li>alt: Proporciona un texto alternativo si la imagen no carga, crucial para la accesibilidad (lectores de pantalla) y el SEO.</li>
+					<li>width y height: Controlan la anchura y altura de la imagen.</li>
+				</ul>
+			<li>Ejemplo: <code>&lt;img src="imatge.jpg" alt="Descripció de la imatge" width="300" height="200"&gt;</code></li>
+			<img src="imagen.png" alt="Imagenes">
+		</ul>
+	</li>
+	<li><strong>Vídeos (<code>&lt;video&gt;</code>)</strong>
+		<ul>
+			<li>Función: Inserta reproductores de vídeo de forma nativa.</li>
+			<li>Atributos clave:
+				<ul>
+					<li>src: Ruta del archivo de vídeo.</li>
+					<li>controls: Activa los botones del reproductor (play, pausa, volumen).</li>
+					<li>autoplay: Hace que el vídeo empiece a reproducirse solo al cargar la página.</li>
+					<li>loop: El vídeo se repite en bucle infinitamente.</li>
+					<li>muted: Inicia el vídeo sin sonido.</li>
+				</ul>
+			<li>Ejemplo: <code>&lt;video src="video.mp4" controls width="400" height="300"&gt;...&lt;/video&gt;</code></li>
+			<img src="video.png" alt="Videos">
+		</ul>
+	</li>
+	<li><strong>Audio (<code>&lt;audio&gt;</code>)</strong>
+		<ul>
+			<li>Función: Funciona de forma casi idéntica a <code>&lt;video&gt;</code>, pero está diseñado específicamente para insertar reproductores de sonido nativos.</li>
+			<li>Atributos clave: Comparte exactamente los mismos atributos principales que la etiqueta de vídeo (src, controls, autoplay, loop, muted).</li>
+			<li>Ejemplo: <code>&lt;audio src="audio.mp3" controls&gt;...&lt;/audio&gt;</code></li>
+			<img src="audio.png" alt="Audios">
+		</ul>
+	</li>
+</ol>
+</section>
+<section>
+<h2>ALERT!</h2>
+<p>En las etiquetas de vídeo y audio, es buena práctica incluir un texto entre la apertura y el cierre —ej: "El teu navegador no suporta..."— que solo se mostrará si el navegador del usuario es muy antiguo y no puede cargar el reproductor.</p>
+<img src="alert.png" alt="Important!">
+</section>
+<section>
+<button onclick="window.location.href='../CONTENIDO_HTML_AVANZADO.html'">
+  Volver al Menu Anterior
+</button>
+</section>
+</body>
+</html>

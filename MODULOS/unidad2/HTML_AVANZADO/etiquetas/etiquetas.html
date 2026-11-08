@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>ETIQUETAS</title>
+</head>
+<body>
+<h1>ETIQUETAS</h1>
+<h2>1. Estructurales y de Formato</h2>
+<section>
+<h2><code>&lt;CENTER&gt;</code></h2>
+<p>Obsoleta: Antiguamente utilizada para centrar contenido (texto, imágenes).</p>
+<p><b>Importante:</b> Está completamente obsoleta en HTML5; su uso debe evitarse en favor de CSS para la alineación</p>
+<img src="center.png" alt="Center">
+</section>
+<section>
+<h2><code>&lt;DIV&gt;</code></h2>
+<p>Contenedor de Bloque: Es una etiqueta sin significado semántico que crea divisiones o contenedores de nivel de bloque (ocupan todo el ancho disponible y comienzan en una nueva línea). Se usa para agrupar elementos (texto, imágenes, otras etiquetas) y aplicarles estilos con CSS.</p>
+<p><b>Importante:</b> Un error común es su uso excesivo ("divitis"); siempre que sea posible, se deben preferir etiquetas semánticas (<code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>) y reservar <code>&lt;div&gt;</code> solo para agrupaciones lógicas/visuales cuando no exista una alternativa semántica mejor.</p>
+<img src="div.png" alt="Div">
+<section>
+<h2><code>&lt;span&gt;</code></h2>
+<p>Contenedor en Línea: Etiqueta no semántica que funciona "inline" (solo ocupa el espacio necesario, no fuerza un salto de línea). Sirve para estilizar o manipular pequeñas porciones de texto o contenido específico dentro de un bloque.</p>
+<p><b>Importante:</b> Su uso es adecuado para estilos en línea (combinado con CSS), pero se debe evitar abusar de ella para crear contenedores innecesarios.</p>
+<img src="span.png" alt="Span">
+</section>
+<section>
+<h2><code>&lt;hr&gt;</code></h2>
+<p>Línea Horizontal: En HTML5, ha dejado de ser puramente decorativa y tiene un valor semántico: indica un cambio de tema o una ruptura (break) en el flujo del documento, ayudando a motores de búsqueda y herramientas de accesibilidad.</p>
+<p><b>Importante:</b> No debe usarse solo para fines visuales (en ese caso, usar CSS); debe emplearse cuando es semánticamente necesario separar secciones, aunque su apariencia final (como la línea por defecto) puede y debe estilizarse con CSS.</p>
+<img src="hr.png" alt="HR">
+</section>
+<h2>2. Plantillas y Contenido Dinámico</h2>
+<section>
+<h2><code>&lt;template&gt;</code></h2>
+<p>Define fragmentos de HTML que no se muestran (renderizan) inmediatamente al cargar la página. El contenido queda inactivo hasta que se manipula explícitamente con JavaScript.</p> 
+<p><b>Importante:</b> Es ideal para estructuras HTML preparadas (como listas o tarjetas de productos) que se clonarán e insertarán en el DOM (Document Object Model) en tiempo real, proporcionando gran flexibilidad a las aplicaciones dinámicas. Las plantillas deben ser simples y modulares, y no deben incluir contenido activo (scripts) en su interior, ya que este solo se ejecutará una vez que la plantilla se añada al DOM.</p>
+<img src="template.png" alt="Template">
+</section>
+<h2>3.Incrustación de Contenido Externo</h2>
+<section>
+<h2><code>&lt;iframe&gt;</code></h2>
+<p>Inline Frame: Permite incrustar una página HTML (como vídeos de YouTube, Google Maps o servicios externos) dentro de la página principal de forma moderna y segura. Se personaliza con atributos como width, height, src (ruta del contenido) y frameborder</p>
+<p><b>Importante</b></p>
+<ul>
+	<li>Su uso excesivo puede ralentizar la página y dificultar su gestión; deben usarse alternativas si es posible cargar el contenido dinámico directamente.</li>
+	<li>Para seguridad, se recomienda usar el atributo sandbox para limitar las acciones del iframe.</li>
+	<li>Se deben ajustar las dimensiones para asegurar la correcta visualización en móviles, y usar allowfullscreen si se incrustan vídeos para permitir la vista a pantalla completa.</li>
+</ul>
+<img src="frames.png" alt="iFrames">
+</section>
+<section>
+<button onclick="window.location.href='../CONTENIDO_HTML_AVANZADO.html'">
+  Volver al Menu Anterior
+</button>
+</section>
+</body>
+</html>
